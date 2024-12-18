@@ -10,12 +10,8 @@ import java.util.Scanner;
  */
 public class Utils {
     
-    public static Scanner getScannerEasy( Class klass ) throws Exception {
-        return new Scanner( new File( "resources/testData/" + klass.getPackageName() + "/easy.txt" ) );
-    }
-    
-    public static Scanner getScannerHard( Class klass ) throws Exception {
-        return new Scanner( new File( "resources/testData/" + klass.getPackageName() + "/hard.txt" ) );
+    public static Scanner getScannerForDay( Class klass ) throws Exception {
+        return new Scanner( new File( "resources/testData/" + klass.getPackageName() + ".txt" ) );
     }
     
     public static Scanner getScannerForString( String inputString ) throws Exception {
